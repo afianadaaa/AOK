@@ -1,0 +1,26 @@
+#Afianada Tri Hnadayani - 225150701111016 - AOK
+#biner ke desimal - mengalikan setiap digit biner dengan pangkat dua sesuai posisinya dan menjumlahkannya.
+print("Konversi Bilangan - Afianada Tri Handayani - 225150701111016")
+binary = "1010"
+decimal = int(binary, 2)
+print("Biner          = ", binary, " dikonversi ke Desimal      = ", decimal)
+#desimal ke biner - terus membagi bilangan desimal dengan 2 dan mencatat sisa hasil bagi, hasil pembagian tersebut membentuk bilangan biner dari sisa ke sisa.
+decimal = 10
+binary = bin(decimal)[2:]
+print("Desimal        = ", decimal, "   dikonversi ke Biner        = ", binary)
+#biner ke heksadesimal - mengubah terlebih dahulu ke bilangan desimal, lalu mengubah desimal ke heksadesimal.
+binary = "1010"
+hexadecimal = hex(int(binary, 2))[2:]
+print("Biner          = ", binary, " dikonversi ke Heksadesimal = ", hexadecimal)
+#heksadesimal ke biner - mengubah terlebih dahulu ke bilangan desimal, lalu mengubah desimal ke biner.
+hexadecimal = "A"
+binary = bin(int(hexadecimal, 16))[2:]
+print("Heksadesimal   = ", hexadecimal, "    dikonversi ke Biner        = ", binary)
+#desimal ke heksadesimal - menggunakan fungsi hex() untuk mengubah bilangan desimal ke heksadesimal.
+decimal = 255
+hexadecimal = hex(decimal)[2:]
+print("Desimal        = ", decimal, "  dikonversi ke Heksadesimal = ", hexadecimal)
+#heksadesimal ke desimal - menggunakan fungsi int() dengan basis 16 untuk mengubah heksadesimal ke desimal.
+hexadecimal = "FF"
+decimal = int(hexadecimal, 16)
+print("Heksadesimal   = ", hexadecimal, "   dikonversi ke Desimal      = ", decimal)
